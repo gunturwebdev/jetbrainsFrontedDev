@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-image: url("bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Poppins;
+}
+
+.quiz-title {
+    text-align: center;
+    color: white;
+}
+
+.quiz-content {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 128px 128px 128px;
+    grid-template-columns: 128px 128px 128px;
+    text-align: center;
+    justify-content: center;
+}
+
+.quiz-card {
+    perspective: 1000px;
+}
+
+.quiz-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s linear;
+    transform-style: preserve-3d;
+}
+
+.quiz-card:hover .quiz-card-inner {
+    transform: rotateY(180deg);
+}
+
+.quiz-card .front, .quiz-card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.quiz-card .front {
+    background-color: bisque;
+    color: darkorange;
+}
+
+.quiz-card .back {
+    background-color: darkorange;
+    color: bisque;
+    transform: rotateY(180deg);
+}
