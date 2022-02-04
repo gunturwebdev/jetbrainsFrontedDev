@@ -1,0 +1,60 @@
+body {
+    background-color: #047cfd;
+}
+
+.container {
+    display: flex;
+    width: max-content;
+    margin: auto;
+    padding: 10%;
+}
+
+.white-keys {
+    display: flex;
+}
+
+.white-keys kbd {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    padding: 80px 16px 16px 16px;
+    border: 1px solid #eeeeee;
+}
+
+.black-keys {
+    position: absolute;
+    z-index: 1;
+}
+
+.black-keys kbd {
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    border: 1px solid #000000;
+    color: white;
+}
+
+.black-keys .KeyW {
+    padding: 36px 12px 16px 12px;
+    margin-left: 24px;
+}
+
+.black-keys .KeyE {
+    padding: 36px 12px 16px 12px;
+    margin-left: 4px;
+}
+
+.black-keys .KeyT {
+    padding: 36px 12px 16px 12px;
+    margin-left: 46px;
+}
+
+.black-keys .KeyY {
+    padding: 36px 12px 16px 12px;
+    margin-left: 4px;
+}
+
+.black-keys .KeyU {
+    padding: 36px 12px 16px 12px;
+    margin-left: 4px;
+}
