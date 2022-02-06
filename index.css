@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=IBM+Plex+Sans&display=swap');
+
+body {
+    font-family: "IBM Plex Sans";
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+}
+
+.checked{
+    text-decoration: line-through;
+}
