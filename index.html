@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <link rel="stylesheet" href="index.css">
+    <script async src="index.js"></script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="mars.png" class="planet">
+            <img src="rocket.png" class="rocket">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input class="pwd yellow" type="password" name="pwd">
+                <input class="submit-pwd yellow" type="submit" value="ok">
+                <div class="check-buttons">
+                    <input class="cb" type="checkbox" onchange="launchRocket()">
+                    <input class="cb" type="checkbox" onchange="launchRocket()">
+                    <input class="cb" type="checkbox" onchange="launchRocket()">
+                    <input class="cb" type="checkbox" onchange="launchRocket()">
+                    <input class="cb" type="checkbox" onchange="launchRocket()">
+                    <input class="cb" type="checkbox" onchange="launchRocket()">
+                </div>
+                <div class="levers">
+                    <input class="rg" type="range" min="0" max="10" onchange="launchRocket()">
+                    <input class="rg" type="range" min="0" max="10" onchange="launchRocket()">
+                    <input class="rg" type="range" min="0" max="10" onchange="launchRocket()">
+                    <input class="rg" type="range" min="0" max="10" onchange="launchRocket()">
+                    <input class="rg" type="range" min="0" max="10" onchange="launchRocket()">
+                </div>
+                <input class="submit-inputs yellow" type="submit" value="launch">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
